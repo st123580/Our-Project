@@ -1,76 +1,186 @@
-<!doctype html>
-<html>
+<html lang="vi">
+<head>
+<title>Rosé Perfume Store</title>
 
-    <head>
-        <meta charset="utf-8" />
-        <title>Trang Chủ</title>
-        <link rel="stylesheet" href="css/thuexe.css" />
-    </head>
+<style>:root {--main-bg-color: #f04593}
+.product-item {border: none!important}
+.product-item:hover {
+    border: 1px solid #f4fb6e;
+}
+.gsc-adBlock {display: none}
+/*******************************/
+/*** Promotion ***/
+/*******************************/
+.pm-title {margin-top: -15px;}
+.pm-btn {border-radius: 4px}
+.pm-title>h3>span {margin-top:10px; background-color: #ec018b; }
+/*Nut mua hàng*/
+a.btn.btn-primary.pm-color.pm-btn {
+background-color: #ec018b
+}
+#group-153 .buy-ajax {
+    font-size: 11px;
+   margin: -5px;
+}
+/*Nút xem thêm*/
+button.btn_loadMoreItems.btn.btn-primary.pm-color.pm-btn:hover{background-color: #ec018b;}
+    .big .product-item{height: 680px;
+    border: 1px solid #ddd !important;box-shadow: 2px 2px 7px rgb(17 17 17 / 24%);}
+    .big .product-item img {width: 85%;
+    height: auto;
+    margin: 0 auto;
+    }
+    .big a.buy-ajax {display: block!important;
+    margin: 1px 10px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    }
+    .big .btn_addcart,
+    .big .btn_quick-view {position: inherit;
+    display: block!important;
+    margin: 1px 10px;
+    }
+    .big .product-price span {font-size: 25px;
+}
+    .big .product-price span.discount-price {font-size: 18px}
+    .big .product-price span.percent {font-size: 13px}
+    .big .discount-price {font-size: 20px}
+    .big .title-slogan {
+        color: #9B0E62;
+        font-weight: bold;
+        font-size: 25px;
+        margin: 10px;
+    }
+    @media screen and (max-width:768px){
+        .big .btn_quick-view, .big .btn_addcart{display: none!important;}
+    }
+   @media screen and (min-width:375px) and (max-width:768px) and (orientation: landscape){
+        .big .product-item{height: 840px;}
+    }
 
-    <body>
-        <div class="top-bar">
-            <div class="top-bar-left">
-                <ul class="menu">
-                    <li class="menu-text">Trung tâm Cho thuê ô tô tự lái</li>
-                </ul>
-            </div>
-            <div class="top-bar-right">
-                <ul class="menu">
-                    <li><a href="index.html">Trang chủ</a></li>
-                    <li><a href="4seat.html">Thuê xe</a></li>
-                    <li><a href="contact.html">Liên hệ</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="showcase">
-            <div class="showcase-content">
-                <h1 style="color: red;">CHÀO MỪNG BẠN ĐẾN VỚI CHÚNG TÔI</h1>
-                <p style="font-size: 20px;">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. In sit necessitatibus, exercitationem
-                    reprehenderit id error.
-                </p>
-            </div>
-        </div>
-        <br>
-        <h2 style="text-align: center;">NHỮNG LỢI ÍCH KHI ĐẾN ĐÂY</h2>
-        <br>
-        <div class="small-up medium-up large-up">
-            <div class="column">
-                <div class="image-wrapper overlay-fade-in-new-background">
-                    <img class="thumbnail" src="image/audia4.jpg" />
-                </div>
-                <h2>TƯ VẤN NHIỆT TÌNH</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam dolore ipsum sint aliquam facilis animi aperiam iure, repellendus corporis tempora, repellat, odit distinctio labore? Dolor mollitia voluptas eum ipsam sequi?</p>
-            </div>
-            <div class="column">
-                <div class="image-wrapper overlay-fade-in-new-background">
-                    <img class="thumbnail" src="image/gtr.jpg" />
-                </div>
-                <h2>ĐA DẠNG MẪU MÃ, DÒNG XE</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor tempore beatae aperiam enim ut dignissimos sunt asperiores tempora ex quibusdam reprehenderit pariatur suscipit earum voluptatibus, ducimus quisquam unde soluta?</p>
-            </div>
-            <div class="column">
-                <div class="image-wrapper overlay-fade-in-new-background">
-                    <img class="thumbnail" src="image/maybachs600.jpeg" />
-                </div>
-                <h2>VỊ TRÍ THUẬN LỢI</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor tempore beatae aperiam enim ut dignissimos sunt asperiores tempora ex quibusdam reprehenderit pariatur suscipit earum voluptatibus, ducimus quisquam unde soluta?</p>
-            </div>
-            <div class="column">
-                <div class="image-wrapper overlay-fade-in-new-background">
-                    <img class="thumbnail" src="image/wrx.jpg" />
-                </div>
-                <h2>GIÁ THÀNH HỢP LÝ</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni dolor tempore beatae aperiam enim ut dignissimos sunt asperiores tempora ex quibusdam reprehenderit pariatur suscipit earum voluptatibus, ducimus quisquam unde soluta?</p>
-            </div>
-        </div>
-            
-        <footer>
-            <h2 style="color: white;">Trung tâm Cho thuê ô tô tự lái</h2>
-            <p style="color: white;">Thành phố Vũng Tàu, Việt Nam</p>
-            <h3 style="color: white;">Liên hệ</h3>
-            <p style="color: white;">1234567890 - 0987654321</p>
-        </footer>
-    </body>
 
+/*KM Thanh ly*/
+#block-59 .selling-btn-59 {background-color: #cd0b0c; border: 2px solid #fd1031}
+.btn-default{margin-top:22px}
+
+/*CT buffet*/
+button.choose_product_modal.btn.btn-primary {
+    max-width: 100%;
+}
+p.choose_pm {
+    text-align: center;
+}
+button.choose_product_modal.btn.btn-danger {
+    font-size: 20px;
+}
+
+.pm-102 {
+	background-color: #f4d3d9;
+	margin-bottom: 0;
+	padding-bottom: 30px
+}
+.pm-102 .product-item{
+	border: none;
+}
+.pm-102 .product-item:hover{
+	border: none;
+	box-shadow: none;
+}
+.block-shadow {
+	box-shadow: 0 -5px 5px rgb(17 17 17 / 10%);
+	-webkit-box-shadow: 0 -5px 5px rgb(17 17 17 / 10%)
+}
+
+@media screen and (max-width: 769px){
+	.carousel-indicators li {
+	   border-radius: 0;
+	   background-color: transparent;
+	   border: 1px solid #000;
+	}
+	.carousel-indicators .active {
+		width: 10px;
+		height: 10px;
+		margin: 1px;
+		background-color: #000
+	}
+
+}
+
+#carousel01 .img {width: 1200px;}</style> 
+ </head>
+<body>
+
+<header><div>HỆ THỐNG PHÂN PHỐI NƯỚC HOA & MỸ PHẨM CHÍNH HÃNG HÀNG ĐẦU VIỆT NAM 
+</div><div>
+<div>
+<div>
+<a href="tel:1800 6047">1800 6047</a>
+<span>(ĐẶT HÀNG)</span>
+</div>
+<div>
+<span>
+<a href="tel:1800 6077">1800 6077</a>
+</span>
+<span>(CSKH)</span>
+</div>
+</div>
+</div>
+<div>
+<div>
+<div>
+<a><img src="background.jpg" height="300" alt="Thế Giới Nước Hoa" width="700"></a> 
+<div>
+<div>
+<input name="keyword" type="text" placeholder="Tìm nước hoa hoặc nhãn hiệu..."/>
+</div>
+<div>
+<select>
+<option value="Burberry">Burberry</option><option value="bvlgari">Bvlgari</option><option value="chanel">Chanel</option><option value="calvin-klein">Calvin Klein</option><option value="dior">Christian Dior</option><option value="gucci">Gucci</option><option value="nina-ricci">Nina Ricci</option><option value="versace">Versace</option> <option value="" disabled selected>Chọn Nhãn hiệu</option>
+</select>
+</div>
+</div>
+</div>
+
+<div>
+<div>
+<div>
+<div>
+<ul>
+<li><a href="khuyenmai">Khuyến mãi</a></li><li><a href="spmoi">Sản Phẩm Mới</a></li><li><a href="spbanchay">Sản Phẩm Bán chạy</a></li><a href="store">Hệ thống cửa hàng</a></li> </ul>
+</div>
+<div><a href="#">
+<div ><span>Đặt hàng: (8h30 - 19h)</span> <span>1800 6047</span>
+</div>
+</a> <a href="#">
+<div ><span>CSKH: T2-T6 (8h30 - 19h)</span> <span>1800 6077</span>
+</div>
+</a></div>
+
+</div>
+
+</div>
+</div></header>
+
+<div>
+<div>
+<br />
+
+<div>
+<div>
+<div>Copyright © 2013 Trường Đại Học Bà Rịa Vũng Tàu - Phòng Đào Tạo - Designed by EPMT</div>
+<div>Giấy chứng nhận ĐKKD số: 0314354419 do Sở Kế Hoạch và Đầu Tư TPHCM cấp lần đầu ngày 17/04/2017.
+<p><b>Địa chỉ</b></p>
+<p><b>Cơ sở 1</b>: 80 Trương Công Định, Phường 3, Tp.Vũng Tàu</p> 
+<p><b>Cơ sở 2</b>: 01 Trương Văn Bang, Phường 7, Tp.Vũng Tàu</p> 
+<p><b>Cơ sở 3</b>: 951 Bình Giã, Phường 10, Tp.Vũng Tàu</p>
+<p><b>Liên hệ</b></p> <p><b>Điện thoại: </b>(+84) 254.730 5456</p> 
+<p><b>Fax: </b>(+84) 254 353 22 33</p> <p><b>Email: </b>dhbrvt@bvu.edu.vn</p> </div>
+</div>
+<a><img src="background.jpg" height="100" width="250"/></a>
+</div>
+</div>
+</div>
+</div>
+</body>
 </html>
