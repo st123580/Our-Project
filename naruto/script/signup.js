@@ -3,6 +3,8 @@ eField = form.querySelector(".email"),
 eInput = eField.querySelector("input"),
 pField = form.querySelector(".password"),
 pInput = pField.querySelector("input");
+pConfirmField = form.querySelector(".confirmpassword"),
+pConfirmInput = pConfirmField.querySelector("input");
 
 form.addEventListener("keyup", function(event) {
   if (event.keyCode === 13) {
@@ -15,6 +17,7 @@ form.onsubmit = (e)=>{
   //if email and password is blank then add shake class in it else call specified function
   (eInput.value == "") ? eField.classList.add("shake", "error") : checkEmail();
   (pInput.value == "") ? pField.classList.add("shake", "error") : checkPass();
+  (pConfirmInput.value == "") ? pConfirmField.classList.add("shake", "error") : checkPassConfirm();
 
   setTimeout(()=>{ //remove shake class after 500ms
     eField.classList.remove("shake");
@@ -22,6 +25,7 @@ form.onsubmit = (e)=>{
   }, 500);
 
   eInput.onkeyup = ()=>{checkEmail();} //calling checkEmail function on email input keyup
+  pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function on pass input keyup
   pInput.onkeyup = ()=>{checkPass();} //calling checkPassword function on pass input keyup
 
   function checkEmail(){ //checkEmail function
@@ -47,6 +51,17 @@ form.onsubmit = (e)=>{
       pField.classList.add("valid");
     }
   }
+
+  function checkPassConfirm(){ //checkPassConfirm function
+    if(pInput.value != pConfirmInput.value){ //if pass is empty then add error and remove valid class
+      pConfirmField.classList.add("error");
+      pConfirmField.classList.remove("valid");
+    }else{ //if pass is empty then remove error and add valid class
+      pConfirmField.classList.remove("error");
+      pConfirmField.classList.add("valid");
+    }
+  }
+
 
   //if eField and pField doesn't contains error class that mean user filled details properly
   if(!eField.classList.contains("error") && !pField.classList.contains("error")){
