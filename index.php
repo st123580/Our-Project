@@ -1,2 +1,3 @@
 <?php
-    require_once("../naruto/index.html");
+    require_once("index.html");
+?>
