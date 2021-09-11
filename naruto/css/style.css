@@ -78,13 +78,6 @@
  .top-bar {
   background-color: black;
 }
-.top-bar::before, .top-bar::after {
-  content: ' ';
-  display: table; 
-}
-.top-bar::after {
-  clear: both; 
-}
 
   .top-bar-right {
     float: right; 
